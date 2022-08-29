@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.child-container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.head-img {
+    max-width: 70%;
+    margin: auto;
+    overflow: hidden;
+    display: block;
+    height: auto;
+    z-index: 1;
+}
+
+.mainhead {
+    text-align: center;
+}
+
+.head {
+    color: white;
+    background-color: #87b42c;
+    text-align: center;
+    padding: 10px;
+}
+
+.library {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: Goudy Stout;
+    border-bottom: 3px solid goldenrod;
+}
+
+ul.head-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #507703;
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#navlink:hover {
+    color: white;
+}
+
+li a:hover {
+    background-color: #87b42c;
+}
+
+.left {
+    float: left;
+    width: 20%;
+    height: 606px;
+    background-color: black;
+}
+
+.left-head {
+    text-align: center;
+    font-family: Courier New;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 20px;
+    color: white;
+    background-color: gray;
+}
+
+.left-nav {
+    margin-top: 10px;
+}
+
+ul.left-ul {
+    width: 70%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
+}
+
+.left-ul li a {
+    display: block;
+    color: white;
+    padding: 14px 30px;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.left-ul li a:hover {
+    background-color: #87b42c;
+    padding: 14px 30px;
+}
+
+.right {
+    float: right;
+    width: 80%;
+    height: 100%;
+}
+
+.up img {
+    width: 100%;
+    height: 300px;
+    vertical-align: middle;
+}
+
+.caption {
+    color: white;
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    top: 55%;
+    right: 15%;
+}
+
+.down {
+    padding: 50px;
+    font-size: 30px;
+    height: 500px;
+    height: auto;
+    background-color: gold;
+}
+
+.foot {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #87b42c;
+    font-family: Calibri;
+}
