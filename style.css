@@ -1,15 +1,12 @@
+html,
 body {
     margin: 0;
+    height: 100%;
+    width: 100%;
 }
 
 .container {
-    width: 100%;
-    margin: auto;
-    overflow: hidden;
-}
-
-.child-container {
-    width: 60%;
+    width: 70%;
     margin: auto;
     overflow: hidden;
 }
@@ -23,16 +20,62 @@ body {
     z-index: 1;
 }
 
-.mainhead {
-    text-align: center;
-}
-
 .head {
     color: white;
     background-color: #87b42c;
     text-align: center;
     padding: 10px;
 }
+
+.topnav {
+    overflow: hidden;
+    background-color: #507703;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #87b42c;
+    color: white    ;
+}
+
+.sidebar {
+    float: left;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: black;
+    /* position: fixed; */
+    height: 100%;
+    overflow: auto;
+}
+
+.sidebar a {
+    font-size: 20px;
+    display: block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: #87b42c;
+}
+
+.right {
+    float: left;
+    width: 85%;
+    height: 100%;
+}
+
 
 .library {
     text-align: center;
@@ -42,100 +85,29 @@ body {
     border-bottom: 3px solid goldenrod;
 }
 
-ul.head-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #507703;
-    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
-}
-
-li {
-    float: left;
-}
-
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 20px;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-#navlink:hover {
-    color: white;
-}
-
-li a:hover {
-    background-color: #87b42c;
-}
-
-.left {
-    float: left;
-    width: 20%;
-    height: 606px;
-    background-color: black;
-}
-
-.left-head {
-    text-align: center;
-    font-family: Courier New;
-    font-size: 15px;
-    font-weight: bold;
-    padding: 20px;
-    color: white;
-    background-color: gray;
-}
-
-.left-nav {
-    margin-top: 10px;
-}
-
-ul.left-ul {
-    width: 70%;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: 'Lucida Sans Unicode', 'Gill Sans Light';
-}
-
-.left-ul li a {
-    display: block;
-    color: white;
-    padding: 14px 30px;
-    font-size: 15px;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.left-ul li a:hover {
-    background-color: #87b42c;
-    padding: 14px 30px;
-}
-
-.right {
-    float: right;
-    width: 80%;
-    height: 100%;
-}
 
 .up img {
     width: 100%;
-    height: 300px;
+    height: 400px;
+    position: relative;
     vertical-align: middle;
 }
 
 .caption {
-    color: white;
+    /* color: white;
     position: absolute;
     font-size: 35px;
     font-weight: bold;
     top: 55%;
-    right: 15%;
+    right: 15%; */
+
+    position: absolute;
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .down {
@@ -147,6 +119,10 @@ ul.left-ul {
 }
 
 .foot {
+    /* position: fixed; */
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     font-weight: bold;
